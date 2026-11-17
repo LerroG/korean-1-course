@@ -86,6 +86,13 @@ main { min-height: 67vh; padding: 40px 0 64px; }
 .example { margin-block: 14px; background: #f6f1e3; }
 .example p { margin-top: .4rem; }
 blockquote { margin: 1rem 0; line-height: 1.8; }
+.desk-scene { display: grid; grid-template-columns: minmax(45px, .7fr) minmax(0, 4fr); gap: 12px; max-width: 620px; margin: 1.2rem 0; align-items: center; }
+.desk-bag { padding: 18px 4px; border-radius: 12px; background: var(--violet); text-align: center; font-weight: 700; }
+.desk-surface { border: 2px solid #d8bda4; border-radius: 12px; padding: 16px 12px; background: var(--orange); }
+.desk-computer { width: 70%; margin: 0 auto 22px; border: 3px solid #667269; border-bottom-width: 9px; border-radius: 7px; padding: 12px 4px; text-align: center; background: var(--white); font-weight: 700; }
+.desk-items { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 8px; }
+.desk-items span { background: var(--white); border-radius: 8px; padding: 12px 3px; text-align: center; }
+.desk-scene figcaption { grid-column: 1 / -1; color: var(--muted); font-size: .9rem; }
 details { margin: .85rem 0; border: 1px solid var(--line); padding: .7rem 1rem; border-radius: 10px; }
 summary { cursor: pointer; color: var(--green); font-weight: 700; }
 details[open] summary { margin-bottom: .65rem; }
@@ -127,6 +134,14 @@ progress { display: block; width: 100%; margin-top: .55rem; height: .5rem; accen
 .word-list b { display: block; margin-bottom: .2rem; }
 .word-list span { color: var(--muted); font-size: .88rem; }
 footer { display: flex; gap: 1rem; justify-content: space-between; padding-block: 20px 28px; border-top: 1px solid var(--line); font-size: .83rem; color: var(--muted); }
+
+.week-calendar { margin: 1.5rem 0; }
+.week-calendar figcaption { margin-bottom: .65rem; color: var(--muted); font-size: .9rem; }
+.week-calendar ol { display: grid; grid-template-columns: repeat(auto-fit, minmax(175px, 1fr)); gap: .65rem; padding: 0; list-style: none; }
+.week-calendar li { padding: .9rem; border: 1px solid var(--line); border-radius: 12px; background: #edf2e8; }
+.week-calendar b, .week-calendar span { display: block; }
+.week-calendar b { margin-bottom: .45rem; }
+.week-calendar span { font-size: .9rem; }
 
 @media (max-width: 760px) {
   .shell { width: min(100% - 32px, 1120px); }
